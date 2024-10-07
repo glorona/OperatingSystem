@@ -1,0 +1,674 @@
+40 messages loaded from file messagesTCH.txt
+25 messages loaded from file messagesSTD.txt
+0 Asserts Loaded
+[0] STARTING simulation
+[0] User program list:
+    Program [prog-V4-E6-TooBig] with arrival time [0]
+    Program [prog-V4-E6-a] with arrival time [0]
+    Program [prog-V4-E6-a copy] with arrival time [0]
+    Program [prog-V4-E6-a copy 2] with arrival time [0]
+    Program [prog-V4-E6-a copy 3] with arrival time [0]
+    Program [prog-V4-E6-a copy 4] with arrival time [0]
+    Program [prog-V4-E6-b] with arrival time [0]
+    Program [prog-V4-E6-c] with arrival time [0]
+	[0] Running Process Information:
+		[--- No running process ---]
+	[0] Ready-to-run processes queues:
+            USER:
+            DAEMONS:
+	[0] SLEEPING Queue:
+		[--- empty queue ---]
+	[0] PID association with program's name:
+		[--- NO process association ---]
+	[0] Arrival Time Queue:
+		[SystemIdleProcess, 0, DAEMON-PROGRAM]
+		[prog-V4-E6-TooBig, 0, USER-PROGRAM]
+		[prog-V4-E6-a, 0, USER-PROGRAM]
+		[prog-V4-E6-a copy, 0, USER-PROGRAM]
+		[prog-V4-E6-a copy 2, 0, USER-PROGRAM]
+		[prog-V4-E6-a copy 3, 0, USER-PROGRAM]
+		[prog-V4-E6-a copy 4, 0, USER-PROGRAM]
+		[prog-V4-E6-b, 0, USER-PROGRAM]
+		[prog-V4-E6-c, 0, USER-PROGRAM]
+	[0] Main memory state (during system initialization):
+		[0] [0 -> 4][AVAILABLE]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+	[0] Process [9 - SystemIdleProcess] requests [4] memory positions
+	[0] Main memory state (before allocating memory):
+		[0] [0 -> 4][AVAILABLE]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+	[0] Partition [0: 0 -> 4] has been assigned to process [9 - SystemIdleProcess]
+	[0] Main memory state (after allocating memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+	[0] Process [9] created into the [NEW] state, from program [SystemIdleProcess]
+	[0] Process [9 - SystemIdleProcess] moving from the [NEW] state to the [READY] state
+	[0] Process [0 - prog-V4-E6-TooBig] requests [120] memory positions
+	[0] ERROR: Program [prog-V4-E6-TooBig] is too big
+	[0] Process [0 - prog-V4-E6-a] requests [10] memory positions
+	[0] Main memory state (before allocating memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+	[0] Partition [1: 4 -> 12] has been assigned to process [0 - prog-V4-E6-a]
+	[0] Main memory state (after allocating memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][0 - prog-V4-E6-a]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+	[0] Process [0] created into the [NEW] state, from program [prog-V4-E6-a]
+	[0] Process [0 - prog-V4-E6-a] moving from the [NEW] state to the [READY] state
+	[0] Process [1 - prog-V4-E6-a copy] requests [10] memory positions
+	[0] Main memory state (before allocating memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][0 - prog-V4-E6-a]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+	[0] Partition [2: 16 -> 16] has been assigned to process [1 - prog-V4-E6-a copy]
+	[0] Main memory state (after allocating memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][0 - prog-V4-E6-a]
+		[2] [16 -> 16][1 - prog-V4-E6-a copy]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+	[0] Process [1] created into the [NEW] state, from program [prog-V4-E6-a copy]
+	[0] Process [1 - prog-V4-E6-a copy] moving from the [NEW] state to the [READY] state
+	[0] Process [2 - prog-V4-E6-a copy 2] requests [10] memory positions
+	[0] Main memory state (before allocating memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][0 - prog-V4-E6-a]
+		[2] [16 -> 16][1 - prog-V4-E6-a copy]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+	[0] Partition [5: 192 -> 16] has been assigned to process [2 - prog-V4-E6-a copy 2]
+	[0] Main memory state (after allocating memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][0 - prog-V4-E6-a]
+		[2] [16 -> 16][1 - prog-V4-E6-a copy]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][2 - prog-V4-E6-a copy 2]
+		[6] [208 -> 32][AVAILABLE]
+	[0] Process [2] created into the [NEW] state, from program [prog-V4-E6-a copy 2]
+	[0] Process [2 - prog-V4-E6-a copy 2] moving from the [NEW] state to the [READY] state
+	[0] Process [3 - prog-V4-E6-a copy 3] requests [10] memory positions
+	[0] Main memory state (before allocating memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][0 - prog-V4-E6-a]
+		[2] [16 -> 16][1 - prog-V4-E6-a copy]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][2 - prog-V4-E6-a copy 2]
+		[6] [208 -> 32][AVAILABLE]
+	[0] Partition [6: 208 -> 32] has been assigned to process [3 - prog-V4-E6-a copy 3]
+	[0] Main memory state (after allocating memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][0 - prog-V4-E6-a]
+		[2] [16 -> 16][1 - prog-V4-E6-a copy]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][2 - prog-V4-E6-a copy 2]
+		[6] [208 -> 32][3 - prog-V4-E6-a copy 3]
+	[0] Process [3] created into the [NEW] state, from program [prog-V4-E6-a copy 3]
+	[0] Process [3 - prog-V4-E6-a copy 3] moving from the [NEW] state to the [READY] state
+	[0] Process [4 - prog-V4-E6-a copy 4] requests [10] memory positions
+	[0] Main memory state (before allocating memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][0 - prog-V4-E6-a]
+		[2] [16 -> 16][1 - prog-V4-E6-a copy]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][2 - prog-V4-E6-a copy 2]
+		[6] [208 -> 32][3 - prog-V4-E6-a copy 3]
+	[0] Partition [4: 128 -> 64] has been assigned to process [4 - prog-V4-E6-a copy 4]
+	[0] Main memory state (after allocating memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][0 - prog-V4-E6-a]
+		[2] [16 -> 16][1 - prog-V4-E6-a copy]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][4 - prog-V4-E6-a copy 4]
+		[5] [192 -> 16][2 - prog-V4-E6-a copy 2]
+		[6] [208 -> 32][3 - prog-V4-E6-a copy 3]
+	[0] Process [4] created into the [NEW] state, from program [prog-V4-E6-a copy 4]
+	[0] Process [4 - prog-V4-E6-a copy 4] moving from the [NEW] state to the [READY] state
+	[0] Process [5 - prog-V4-E6-b] requests [25] memory positions
+	[0] Main memory state (before allocating memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][0 - prog-V4-E6-a]
+		[2] [16 -> 16][1 - prog-V4-E6-a copy]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][4 - prog-V4-E6-a copy 4]
+		[5] [192 -> 16][2 - prog-V4-E6-a copy 2]
+		[6] [208 -> 32][3 - prog-V4-E6-a copy 3]
+	[0] Partition [3: 32 -> 96] has been assigned to process [5 - prog-V4-E6-b]
+	[0] Main memory state (after allocating memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][0 - prog-V4-E6-a]
+		[2] [16 -> 16][1 - prog-V4-E6-a copy]
+		[3] [32 -> 96][5 - prog-V4-E6-b]
+		[4] [128 -> 64][4 - prog-V4-E6-a copy 4]
+		[5] [192 -> 16][2 - prog-V4-E6-a copy 2]
+		[6] [208 -> 32][3 - prog-V4-E6-a copy 3]
+	[0] Process [5] created into the [NEW] state, from program [prog-V4-E6-b]
+	[0] Process [5 - prog-V4-E6-b] moving from the [NEW] state to the [READY] state
+	[0] Process [6 - prog-V4-E6-c] requests [10] memory positions
+	[0] ERROR: A process could not be created from program [prog-V4-E6-c] because an appropriate partition is not available
+	[0] Running Process Information:
+		[--- No running process ---]
+	[0] Ready-to-run processes queues:
+            USER: [0,10], [1,10], [2,10], [3,10], [4,10], [5,10]
+            DAEMONS: [9,100]
+	[0] SLEEPING Queue:
+		[--- empty queue ---]
+	[0] PID association with program's name:
+		PID: 0 -> prog-V4-E6-a
+		PID: 1 -> prog-V4-E6-a copy
+		PID: 2 -> prog-V4-E6-a copy 2
+		PID: 3 -> prog-V4-E6-a copy 3
+		PID: 4 -> prog-V4-E6-a copy 4
+		PID: 5 -> prog-V4-E6-b
+		PID: 9 -> SystemIdleProcess
+	[0] Arrival Time Queue:
+		[--- empty queue ---]
+	[0] Process [0 - prog-V4-E6-a] moving from the [READY] state to the [EXECUTING] state
+	[0] Running Process Information:
+		[PID: 0, Priority: 10, WakeUp: 0, Queue: USER]
+	[0] Ready-to-run processes queues:
+            USER: [1,10], [3,10], [2,10], [5,10], [4,10]
+            DAEMONS: [9,100]
+	[0] SLEEPING Queue:
+		[--- empty queue ---]
+	[0] PID association with program's name:
+		PID: 0 -> prog-V4-E6-a
+		PID: 1 -> prog-V4-E6-a copy
+		PID: 2 -> prog-V4-E6-a copy 2
+		PID: 3 -> prog-V4-E6-a copy 3
+		PID: 4 -> prog-V4-E6-a copy 4
+		PID: 5 -> prog-V4-E6-b
+		PID: 9 -> SystemIdleProcess
+	[0] Arrival Time Queue:
+		[--- empty queue ---]
+[1] {0D 000 000} IRET 0 0 (PID: 0, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[2] {08 005 000} WRITE 5 0 (PID: 0, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[3] {11 064 005} MEMADD 100 5 (PID: 0, PC: 2, Accumulator: 100, PSW: 0000 [----------------])
+[4] {08 005 000} WRITE 5 0 (PID: 0, PC: 3, Accumulator: 100, PSW: 0000 [----------------])
+[5] {04 003 000} TRAP 3 0 (PID: 0, PC: 4, Accumulator: 100, PSW: 0000 [----------------])
+[6] {0C 002 000} OS 2 0 (PID: 0, PC: 242, Accumulator: 100, PSW: 8080 [M-------X-------])
+	[7] Process [0 - prog-V4-E6-a] has requested to terminate
+	[7] Process [0 - prog-V4-E6-a] moving from the [EXECUTING] state to the [EXIT] state
+	[7] Main memory state (before releasing memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][0 - prog-V4-E6-a]
+		[2] [16 -> 16][1 - prog-V4-E6-a copy]
+		[3] [32 -> 96][5 - prog-V4-E6-b]
+		[4] [128 -> 64][4 - prog-V4-E6-a copy 4]
+		[5] [192 -> 16][2 - prog-V4-E6-a copy 2]
+		[6] [208 -> 32][3 - prog-V4-E6-a copy 3]
+	[7] Partition [1: 4 -> 12] used by process [0 - prog-V4-E6-a] has been released
+	[7] Main memory state (after releasing memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][1 - prog-V4-E6-a copy]
+		[3] [32 -> 96][5 - prog-V4-E6-b]
+		[4] [128 -> 64][4 - prog-V4-E6-a copy 4]
+		[5] [192 -> 16][2 - prog-V4-E6-a copy 2]
+		[6] [208 -> 32][3 - prog-V4-E6-a copy 3]
+	[7] Process [1 - prog-V4-E6-a copy] moving from the [READY] state to the [EXECUTING] state
+	[7] Running Process Information:
+		[PID: 1, Priority: 10, WakeUp: 0, Queue: USER]
+	[7] Ready-to-run processes queues:
+            USER: [2,10], [3,10], [4,10], [5,10]
+            DAEMONS: [9,100]
+	[7] SLEEPING Queue:
+		[--- empty queue ---]
+	[7] PID association with program's name:
+		PID: 0 -> prog-V4-E6-a Zombie process!
+		PID: 1 -> prog-V4-E6-a copy
+		PID: 2 -> prog-V4-E6-a copy 2
+		PID: 3 -> prog-V4-E6-a copy 3
+		PID: 4 -> prog-V4-E6-a copy 4
+		PID: 5 -> prog-V4-E6-b
+		PID: 9 -> SystemIdleProcess
+	[7] Arrival Time Queue:
+		[--- empty queue ---]
+[8] {0D 000 000} IRET 0 0 (PID: 1, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[9] {0C 009 000} OS 9 0 (PID: 1, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[10] Clock interrupt number [1] has occurred
+[11] {0D 000 000} IRET 0 0 (PID: 1, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[12] {0C 009 000} OS 9 0 (PID: 1, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[13] Clock interrupt number [2] has occurred
+[14] {0D 000 000} IRET 0 0 (PID: 1, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[15] {08 005 000} WRITE 5 0 (PID: 1, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[16] {0C 009 000} OS 9 0 (PID: 1, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[17] Clock interrupt number [3] has occurred
+[18] {0D 000 000} IRET 0 0 (PID: 1, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[19] {11 064 005} MEMADD 100 5 (PID: 1, PC: 2, Accumulator: 100, PSW: 0000 [----------------])
+[20] {08 005 000} WRITE 5 0 (PID: 1, PC: 3, Accumulator: 100, PSW: 0000 [----------------])
+[21] {0C 009 000} OS 9 0 (PID: 1, PC: 246, Accumulator: 100, PSW: 8080 [M-------X-------])
+	[22] Clock interrupt number [4] has occurred
+[23] {0D 000 000} IRET 0 0 (PID: 1, PC: 3, Accumulator: 100, PSW: 0000 [----------------])
+[24] {04 003 000} TRAP 3 0 (PID: 1, PC: 4, Accumulator: 100, PSW: 0000 [----------------])
+[25] {0C 002 000} OS 2 0 (PID: 1, PC: 242, Accumulator: 100, PSW: 8080 [M-------X-------])
+	[26] Process [1 - prog-V4-E6-a copy] has requested to terminate
+	[26] Process [1 - prog-V4-E6-a copy] moving from the [EXECUTING] state to the [EXIT] state
+	[26] Main memory state (before releasing memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][1 - prog-V4-E6-a copy]
+		[3] [32 -> 96][5 - prog-V4-E6-b]
+		[4] [128 -> 64][4 - prog-V4-E6-a copy 4]
+		[5] [192 -> 16][2 - prog-V4-E6-a copy 2]
+		[6] [208 -> 32][3 - prog-V4-E6-a copy 3]
+	[26] Partition [2: 16 -> 16] used by process [1 - prog-V4-E6-a copy] has been released
+	[26] Main memory state (after releasing memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][5 - prog-V4-E6-b]
+		[4] [128 -> 64][4 - prog-V4-E6-a copy 4]
+		[5] [192 -> 16][2 - prog-V4-E6-a copy 2]
+		[6] [208 -> 32][3 - prog-V4-E6-a copy 3]
+	[26] Process [2 - prog-V4-E6-a copy 2] moving from the [READY] state to the [EXECUTING] state
+	[26] Running Process Information:
+		[PID: 2, Priority: 10, WakeUp: 0, Queue: USER]
+	[26] Ready-to-run processes queues:
+            USER: [3,10], [5,10], [4,10]
+            DAEMONS: [9,100]
+	[26] SLEEPING Queue:
+		[--- empty queue ---]
+	[26] PID association with program's name:
+		PID: 0 -> prog-V4-E6-a Zombie process!
+		PID: 1 -> prog-V4-E6-a copy Zombie process!
+		PID: 2 -> prog-V4-E6-a copy 2
+		PID: 3 -> prog-V4-E6-a copy 3
+		PID: 4 -> prog-V4-E6-a copy 4
+		PID: 5 -> prog-V4-E6-b
+		PID: 9 -> SystemIdleProcess
+	[26] Arrival Time Queue:
+		[--- empty queue ---]
+[27] {0D 000 000} IRET 0 0 (PID: 2, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[28] {0C 009 000} OS 9 0 (PID: 2, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[29] Clock interrupt number [5] has occurred
+[30] {0D 000 000} IRET 0 0 (PID: 2, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[31] {0C 009 000} OS 9 0 (PID: 2, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[32] Clock interrupt number [6] has occurred
+[33] {0D 000 000} IRET 0 0 (PID: 2, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[34] {08 005 000} WRITE 5 0 (PID: 2, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[35] {11 064 005} MEMADD 100 5 (PID: 2, PC: 2, Accumulator: 100, PSW: 0000 [----------------])
+[36] {0C 009 000} OS 9 0 (PID: 2, PC: 246, Accumulator: 100, PSW: 8080 [M-------X-------])
+	[37] Clock interrupt number [7] has occurred
+[38] {0D 000 000} IRET 0 0 (PID: 2, PC: 2, Accumulator: 100, PSW: 0000 [----------------])
+[39] {08 005 000} WRITE 5 0 (PID: 2, PC: 3, Accumulator: 100, PSW: 0000 [----------------])
+[40] {04 003 000} TRAP 3 0 (PID: 2, PC: 4, Accumulator: 100, PSW: 0000 [----------------])
+[41] {0C 002 000} OS 2 0 (PID: 2, PC: 242, Accumulator: 100, PSW: 8080 [M-------X-------])
+	[42] Process [2 - prog-V4-E6-a copy 2] has requested to terminate
+	[42] Process [2 - prog-V4-E6-a copy 2] moving from the [EXECUTING] state to the [EXIT] state
+	[42] Main memory state (before releasing memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][5 - prog-V4-E6-b]
+		[4] [128 -> 64][4 - prog-V4-E6-a copy 4]
+		[5] [192 -> 16][2 - prog-V4-E6-a copy 2]
+		[6] [208 -> 32][3 - prog-V4-E6-a copy 3]
+	[42] Partition [5: 192 -> 16] used by process [2 - prog-V4-E6-a copy 2] has been released
+	[42] Main memory state (after releasing memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][5 - prog-V4-E6-b]
+		[4] [128 -> 64][4 - prog-V4-E6-a copy 4]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][3 - prog-V4-E6-a copy 3]
+	[42] Process [3 - prog-V4-E6-a copy 3] moving from the [READY] state to the [EXECUTING] state
+	[42] Running Process Information:
+		[PID: 3, Priority: 10, WakeUp: 0, Queue: USER]
+	[42] Ready-to-run processes queues:
+            USER: [4,10], [5,10]
+            DAEMONS: [9,100]
+	[42] SLEEPING Queue:
+		[--- empty queue ---]
+	[42] PID association with program's name:
+		PID: 0 -> prog-V4-E6-a Zombie process!
+		PID: 1 -> prog-V4-E6-a copy Zombie process!
+		PID: 2 -> prog-V4-E6-a copy 2 Zombie process!
+		PID: 3 -> prog-V4-E6-a copy 3
+		PID: 4 -> prog-V4-E6-a copy 4
+		PID: 5 -> prog-V4-E6-b
+		PID: 9 -> SystemIdleProcess
+	[42] Arrival Time Queue:
+		[--- empty queue ---]
+[43] {0D 000 000} IRET 0 0 (PID: 3, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[44] {0C 009 000} OS 9 0 (PID: 3, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[45] Clock interrupt number [8] has occurred
+[46] {0D 000 000} IRET 0 0 (PID: 3, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[47] {0C 009 000} OS 9 0 (PID: 3, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[48] Clock interrupt number [9] has occurred
+[49] {0D 000 000} IRET 0 0 (PID: 3, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[50] {08 005 000} WRITE 5 0 (PID: 3, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[51] {0C 009 000} OS 9 0 (PID: 3, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[52] Clock interrupt number [10] has occurred
+[53] {0D 000 000} IRET 0 0 (PID: 3, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[54] {11 064 005} MEMADD 100 5 (PID: 3, PC: 2, Accumulator: 100, PSW: 0000 [----------------])
+[55] {08 005 000} WRITE 5 0 (PID: 3, PC: 3, Accumulator: 100, PSW: 0000 [----------------])
+[56] {0C 009 000} OS 9 0 (PID: 3, PC: 246, Accumulator: 100, PSW: 8080 [M-------X-------])
+	[57] Clock interrupt number [11] has occurred
+[58] {0D 000 000} IRET 0 0 (PID: 3, PC: 3, Accumulator: 100, PSW: 0000 [----------------])
+[59] {04 003 000} TRAP 3 0 (PID: 3, PC: 4, Accumulator: 100, PSW: 0000 [----------------])
+[60] {0C 002 000} OS 2 0 (PID: 3, PC: 242, Accumulator: 100, PSW: 8080 [M-------X-------])
+	[61] Process [3 - prog-V4-E6-a copy 3] has requested to terminate
+	[61] Process [3 - prog-V4-E6-a copy 3] moving from the [EXECUTING] state to the [EXIT] state
+	[61] Main memory state (before releasing memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][5 - prog-V4-E6-b]
+		[4] [128 -> 64][4 - prog-V4-E6-a copy 4]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][3 - prog-V4-E6-a copy 3]
+	[61] Partition [6: 208 -> 32] used by process [3 - prog-V4-E6-a copy 3] has been released
+	[61] Main memory state (after releasing memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][5 - prog-V4-E6-b]
+		[4] [128 -> 64][4 - prog-V4-E6-a copy 4]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+	[61] Process [4 - prog-V4-E6-a copy 4] moving from the [READY] state to the [EXECUTING] state
+	[61] Running Process Information:
+		[PID: 4, Priority: 10, WakeUp: 0, Queue: USER]
+	[61] Ready-to-run processes queues:
+            USER: [5,10]
+            DAEMONS: [9,100]
+	[61] SLEEPING Queue:
+		[--- empty queue ---]
+	[61] PID association with program's name:
+		PID: 0 -> prog-V4-E6-a Zombie process!
+		PID: 1 -> prog-V4-E6-a copy Zombie process!
+		PID: 2 -> prog-V4-E6-a copy 2 Zombie process!
+		PID: 3 -> prog-V4-E6-a copy 3 Zombie process!
+		PID: 4 -> prog-V4-E6-a copy 4
+		PID: 5 -> prog-V4-E6-b
+		PID: 9 -> SystemIdleProcess
+	[61] Arrival Time Queue:
+		[--- empty queue ---]
+[62] {0D 000 000} IRET 0 0 (PID: 4, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[63] {0C 009 000} OS 9 0 (PID: 4, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[64] Clock interrupt number [12] has occurred
+[65] {0D 000 000} IRET 0 0 (PID: 4, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[66] {0C 009 000} OS 9 0 (PID: 4, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[67] Clock interrupt number [13] has occurred
+[68] {0D 000 000} IRET 0 0 (PID: 4, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[69] {08 005 000} WRITE 5 0 (PID: 4, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[70] {11 064 005} MEMADD 100 5 (PID: 4, PC: 2, Accumulator: 100, PSW: 0000 [----------------])
+[71] {0C 009 000} OS 9 0 (PID: 4, PC: 246, Accumulator: 100, PSW: 8080 [M-------X-------])
+	[72] Clock interrupt number [14] has occurred
+[73] {0D 000 000} IRET 0 0 (PID: 4, PC: 2, Accumulator: 100, PSW: 0000 [----------------])
+[74] {08 005 000} WRITE 5 0 (PID: 4, PC: 3, Accumulator: 100, PSW: 0000 [----------------])
+[75] {04 003 000} TRAP 3 0 (PID: 4, PC: 4, Accumulator: 100, PSW: 0000 [----------------])
+[76] {0C 002 000} OS 2 0 (PID: 4, PC: 242, Accumulator: 100, PSW: 8080 [M-------X-------])
+	[77] Process [4 - prog-V4-E6-a copy 4] has requested to terminate
+	[77] Process [4 - prog-V4-E6-a copy 4] moving from the [EXECUTING] state to the [EXIT] state
+	[77] Main memory state (before releasing memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][5 - prog-V4-E6-b]
+		[4] [128 -> 64][4 - prog-V4-E6-a copy 4]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+	[77] Partition [4: 128 -> 64] used by process [4 - prog-V4-E6-a copy 4] has been released
+	[77] Main memory state (after releasing memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][5 - prog-V4-E6-b]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+	[77] Process [5 - prog-V4-E6-b] moving from the [READY] state to the [EXECUTING] state
+	[77] Running Process Information:
+		[PID: 5, Priority: 10, WakeUp: 0, Queue: USER]
+	[77] Ready-to-run processes queues:
+            USER:
+            DAEMONS: [9,100]
+	[77] SLEEPING Queue:
+		[--- empty queue ---]
+	[77] PID association with program's name:
+		PID: 0 -> prog-V4-E6-a Zombie process!
+		PID: 1 -> prog-V4-E6-a copy Zombie process!
+		PID: 2 -> prog-V4-E6-a copy 2 Zombie process!
+		PID: 3 -> prog-V4-E6-a copy 3 Zombie process!
+		PID: 4 -> prog-V4-E6-a copy 4 Zombie process!
+		PID: 5 -> prog-V4-E6-b
+		PID: 9 -> SystemIdleProcess
+	[77] Arrival Time Queue:
+		[--- empty queue ---]
+[78] {0D 000 000} IRET 0 0 (PID: 5, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[79] {0C 009 000} OS 9 0 (PID: 5, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[80] Clock interrupt number [15] has occurred
+[81] {0D 000 000} IRET 0 0 (PID: 5, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[82] {0C 009 000} OS 9 0 (PID: 5, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[83] Clock interrupt number [16] has occurred
+[84] {0D 000 000} IRET 0 0 (PID: 5, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[85] {08 018 000} WRITE 24 0 (PID: 5, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[86] {0C 009 000} OS 9 0 (PID: 5, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[87] Clock interrupt number [17] has occurred
+[88] {0D 000 000} IRET 0 0 (PID: 5, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[89] {11 064 018} MEMADD 100 24 (PID: 5, PC: 2, Accumulator: 100, PSW: 0000 [----------------])
+[90] {08 018 000} WRITE 24 0 (PID: 5, PC: 3, Accumulator: 100, PSW: 0000 [----------------])
+[91] {0C 009 000} OS 9 0 (PID: 5, PC: 246, Accumulator: 100, PSW: 8080 [M-------X-------])
+	[92] Clock interrupt number [18] has occurred
+[93] {0D 000 000} IRET 0 0 (PID: 5, PC: 3, Accumulator: 100, PSW: 0000 [----------------])
+[94] {0A 001 000} INC 1 0 (PID: 5, PC: 4, Accumulator: 101, PSW: 0000 [----------------])
+[95] {0A 001 000} INC 1 0 (PID: 5, PC: 5, Accumulator: 102, PSW: 0000 [----------------])
+[96] {0C 009 000} OS 9 0 (PID: 5, PC: 246, Accumulator: 102, PSW: 8080 [M-------X-------])
+	[97] Clock interrupt number [19] has occurred
+[98] {0D 000 000} IRET 0 0 (PID: 5, PC: 5, Accumulator: 102, PSW: 0000 [----------------])
+[99] {0A 001 000} INC 1 0 (PID: 5, PC: 6, Accumulator: 103, PSW: 0000 [----------------])
+[100] {0A 001 000} INC 1 0 (PID: 5, PC: 7, Accumulator: 104, PSW: 0000 [----------------])
+[101] {0C 009 000} OS 9 0 (PID: 5, PC: 246, Accumulator: 104, PSW: 8080 [M-------X-------])
+	[102] Clock interrupt number [20] has occurred
+[103] {0D 000 000} IRET 0 0 (PID: 5, PC: 7, Accumulator: 104, PSW: 0000 [----------------])
+[104] {0A 001 000} INC 1 0 (PID: 5, PC: 8, Accumulator: 105, PSW: 0000 [----------------])
+[105] {0A 001 000} INC 1 0 (PID: 5, PC: 9, Accumulator: 106, PSW: 0000 [----------------])
+[106] {0C 009 000} OS 9 0 (PID: 5, PC: 246, Accumulator: 106, PSW: 8080 [M-------X-------])
+	[107] Clock interrupt number [21] has occurred
+[108] {0D 000 000} IRET 0 0 (PID: 5, PC: 9, Accumulator: 106, PSW: 0000 [----------------])
+[109] {0A 001 000} INC 1 0 (PID: 5, PC: 10, Accumulator: 107, PSW: 0000 [----------------])
+[110] {04 007 004} TRAP 7 4 (PID: 5, PC: 11, Accumulator: 107, PSW: 0000 [----------------])
+[111] {0C 002 000} OS 2 0 (PID: 5, PC: 242, Accumulator: 107, PSW: 8080 [M-------X-------])
+	[112] Process [5 - prog-V4-E6-b] moving from the [EXECUTING] state to the [BLOCKED] state
+	[112] Process [9 - SystemIdleProcess] moving from the [READY] state to the [EXECUTING] state
+	[112] Running Process Information:
+		[PID: 9, Priority: 100, WakeUp: 0, Queue: DAEMONS]
+	[112] Ready-to-run processes queues:
+            USER:
+            DAEMONS:
+	[112] SLEEPING Queue:
+		[5, 10, 26]
+	[112] PID association with program's name:
+		PID: 0 -> prog-V4-E6-a Zombie process!
+		PID: 1 -> prog-V4-E6-a copy Zombie process!
+		PID: 2 -> prog-V4-E6-a copy 2 Zombie process!
+		PID: 3 -> prog-V4-E6-a copy 3 Zombie process!
+		PID: 4 -> prog-V4-E6-a copy 4 Zombie process!
+		PID: 5 -> prog-V4-E6-b
+		PID: 9 -> SystemIdleProcess
+	[112] Arrival Time Queue:
+		[--- empty queue ---]
+[113] {0D 000 000} IRET 0 0 (PID: 9, PC: 0, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[114] {0C 009 000} OS 9 0 (PID: 9, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[115] Clock interrupt number [22] has occurred
+[116] {0D 000 000} IRET 0 0 (PID: 9, PC: 0, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[117] {0C 009 000} OS 9 0 (PID: 9, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[118] Clock interrupt number [23] has occurred
+[119] {0D 000 000} IRET 0 0 (PID: 9, PC: 0, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[120] {01 5E1 333} ADD 1505 819 (PID: 9, PC: 1, Accumulator: 2324, PSW: 0080 [--------X-------])
+[121] {0C 009 000} OS 9 0 (PID: 9, PC: 246, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[122] Clock interrupt number [24] has occurred
+[123] {0D 000 000} IRET 0 0 (PID: 9, PC: 1, Accumulator: 2324, PSW: 0080 [--------X-------])
+[124] {05 000 000} NOP 0 0 (PID: 9, PC: 2, Accumulator: 2324, PSW: 0080 [--------X-------])
+[125] {06 801 000} JUMP -1 0 (PID: 9, PC: 1, Accumulator: 2324, PSW: 0080 [--------X-------])
+[126] {0C 009 000} OS 9 0 (PID: 9, PC: 246, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[127] Clock interrupt number [25] has occurred
+[128] {0D 000 000} IRET 0 0 (PID: 9, PC: 1, Accumulator: 2324, PSW: 0080 [--------X-------])
+[129] {05 000 000} NOP 0 0 (PID: 9, PC: 2, Accumulator: 2324, PSW: 0080 [--------X-------])
+[130] {06 801 000} JUMP -1 0 (PID: 9, PC: 1, Accumulator: 2324, PSW: 0080 [--------X-------])
+[131] {0C 009 000} OS 9 0 (PID: 9, PC: 246, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[132] Clock interrupt number [26] has occurred
+	[132] Process [5 - prog-V4-E6-b] moving from the [BLOCKED] state to the [READY] state
+	[132] Process [9 - SystemIdleProcess] will be thrown out of the processor by process [5 - prog-V4-E6-b]
+	[132] Process [9 - SystemIdleProcess] moving from the [EXECUTING] state to the [READY] state
+	[132] Process [5 - prog-V4-E6-b] moving from the [READY] state to the [EXECUTING] state
+	[132] Running Process Information:
+		[PID: 5, Priority: 10, WakeUp: 26, Queue: USER]
+	[132] Ready-to-run processes queues:
+            USER:
+            DAEMONS: [9,100]
+	[132] SLEEPING Queue:
+		[--- empty queue ---]
+	[132] PID association with program's name:
+		PID: 0 -> prog-V4-E6-a Zombie process!
+		PID: 1 -> prog-V4-E6-a copy Zombie process!
+		PID: 2 -> prog-V4-E6-a copy 2 Zombie process!
+		PID: 3 -> prog-V4-E6-a copy 3 Zombie process!
+		PID: 4 -> prog-V4-E6-a copy 4 Zombie process!
+		PID: 5 -> prog-V4-E6-b
+		PID: 9 -> SystemIdleProcess
+	[132] Arrival Time Queue:
+		[--- empty queue ---]
+[133] {0D 000 000} IRET 0 0 (PID: 5, PC: 11, Accumulator: 107, PSW: 0000 [----------------])
+[134] {0A 001 000} INC 1 0 (PID: 5, PC: 12, Accumulator: 108, PSW: 0000 [----------------])
+[135] {0A 001 000} INC 1 0 (PID: 5, PC: 13, Accumulator: 109, PSW: 0000 [----------------])
+[136] {0C 009 000} OS 9 0 (PID: 5, PC: 246, Accumulator: 109, PSW: 8080 [M-------X-------])
+	[137] Clock interrupt number [27] has occurred
+[138] {0D 000 000} IRET 0 0 (PID: 5, PC: 13, Accumulator: 109, PSW: 0000 [----------------])
+[139] {0A 001 000} INC 1 0 (PID: 5, PC: 14, Accumulator: 110, PSW: 0000 [----------------])
+[140] {0A 001 000} INC 1 0 (PID: 5, PC: 15, Accumulator: 111, PSW: 0000 [----------------])
+[141] {0C 009 000} OS 9 0 (PID: 5, PC: 246, Accumulator: 111, PSW: 8080 [M-------X-------])
+	[142] Clock interrupt number [28] has occurred
+[143] {0D 000 000} IRET 0 0 (PID: 5, PC: 15, Accumulator: 111, PSW: 0000 [----------------])
+[144] {0A 001 000} INC 1 0 (PID: 5, PC: 16, Accumulator: 112, PSW: 0000 [----------------])
+[145] {0A 001 000} INC 1 0 (PID: 5, PC: 17, Accumulator: 113, PSW: 0000 [----------------])
+[146] {0C 009 000} OS 9 0 (PID: 5, PC: 246, Accumulator: 113, PSW: 8080 [M-------X-------])
+	[147] Clock interrupt number [29] has occurred
+[148] {0D 000 000} IRET 0 0 (PID: 5, PC: 17, Accumulator: 113, PSW: 0000 [----------------])
+[149] {04 003 000} TRAP 3 0 (PID: 5, PC: 18, Accumulator: 113, PSW: 0000 [----------------])
+[150] {0C 002 000} OS 2 0 (PID: 5, PC: 242, Accumulator: 113, PSW: 8080 [M-------X-------])
+	[151] Process [5 - prog-V4-E6-b] has requested to terminate
+	[151] Process [5 - prog-V4-E6-b] moving from the [EXECUTING] state to the [EXIT] state
+	[151] Main memory state (before releasing memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][5 - prog-V4-E6-b]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+	[151] Partition [3: 32 -> 96] used by process [5 - prog-V4-E6-b] has been released
+	[151] Main memory state (after releasing memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+	[151] Process [9 - SystemIdleProcess] moving from the [READY] state to the [EXECUTING] state
+	[151] Running Process Information:
+		[PID: 9, Priority: 100, WakeUp: 0, Queue: DAEMONS]
+	[151] Ready-to-run processes queues:
+            USER:
+            DAEMONS:
+	[151] SLEEPING Queue:
+		[--- empty queue ---]
+	[151] PID association with program's name:
+		PID: 0 -> prog-V4-E6-a Zombie process!
+		PID: 1 -> prog-V4-E6-a copy Zombie process!
+		PID: 2 -> prog-V4-E6-a copy 2 Zombie process!
+		PID: 3 -> prog-V4-E6-a copy 3 Zombie process!
+		PID: 4 -> prog-V4-E6-a copy 4 Zombie process!
+		PID: 5 -> prog-V4-E6-b Zombie process!
+		PID: 9 -> SystemIdleProcess
+	[151] Arrival Time Queue:
+		[--- empty queue ---]
+[152] {0D 000 000} IRET 0 0 (PID: 9, PC: 3, Accumulator: 2324, PSW: 0080 [--------X-------])
+[153] {0C 009 000} OS 9 0 (PID: 9, PC: 246, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[154] Clock interrupt number [30] has occurred
+[155] {0D 000 000} IRET 0 0 (PID: 9, PC: 3, Accumulator: 2324, PSW: 0080 [--------X-------])
+[156] {0C 009 000} OS 9 0 (PID: 9, PC: 246, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[157] Clock interrupt number [31] has occurred
+[158] {0D 000 000} IRET 0 0 (PID: 9, PC: 3, Accumulator: 2324, PSW: 0080 [--------X-------])
+[159] {04 003 000} TRAP 3 0 (PID: 9, PC: 4, Accumulator: 2324, PSW: 0080 [--------X-------])
+[160] {0C 002 000} OS 2 0 (PID: 9, PC: 242, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[161] Process [9 - SystemIdleProcess] has requested to terminate
+	[161] Process [9 - SystemIdleProcess] moving from the [EXECUTING] state to the [EXIT] state
+	[161] Main memory state (before releasing memory):
+		[0] [0 -> 4][9 - SystemIdleProcess]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+	[161] Partition [0: 0 -> 4] used by process [9 - SystemIdleProcess] has been released
+	[161] Main memory state (after releasing memory):
+		[0] [0 -> 4][AVAILABLE]
+		[1] [4 -> 12][AVAILABLE]
+		[2] [16 -> 16][AVAILABLE]
+		[3] [32 -> 96][AVAILABLE]
+		[4] [128 -> 64][AVAILABLE]
+		[5] [192 -> 16][AVAILABLE]
+		[6] [208 -> 32][AVAILABLE]
+[161] The system will shut down now...
+	[161] Running Process Information:
+		[--- No running process ---]
+	[161] Ready-to-run processes queues:
+            USER:
+            DAEMONS:
+	[161] SLEEPING Queue:
+		[--- empty queue ---]
+	[161] PID association with program's name:
+		PID: 0 -> prog-V4-E6-a Zombie process!
+		PID: 1 -> prog-V4-E6-a copy Zombie process!
+		PID: 2 -> prog-V4-E6-a copy 2 Zombie process!
+		PID: 3 -> prog-V4-E6-a copy 3 Zombie process!
+		PID: 4 -> prog-V4-E6-a copy 4 Zombie process!
+		PID: 5 -> prog-V4-E6-b Zombie process!
+		PID: 9 -> SystemIdleProcess Zombie process!
+	[161] Arrival Time Queue:
+		[--- empty queue ---]
+[162] {0D 000 000} IRET 0 0 (PID: -1, PC: 241, Accumulator: 2324, PSW: 8080 [M-------X-------])
+[163] {0B 000 000} HALT 0 0 (PID: -1, PC: 241, Accumulator: 2324, PSW: 8081 [M-------X------S])
+[163] END of the simulation

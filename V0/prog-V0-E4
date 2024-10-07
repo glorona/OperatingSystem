@@ -1,0 +1,9 @@
+70 // Tamanio del programa en posiciones de memoria
+INC 22
+WRITE 122
+MEMADD 2 122
+WRITE 122
+MEMADD -42 122
+ZJUMP 2
+JUMP -4
+HALT

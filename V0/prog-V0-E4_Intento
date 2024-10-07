@@ -1,0 +1,30 @@
+// Pares desde el 21 hasta el 43
+//120 direccion num negativo
+//119 direccion num positivo
+//122 direccion de numeros validos
+100  // Tamanio del programa en posiciones de memoria
+INC -22 //Cargar primer numero par
+WRITE 120 //Memoria para valores negativos
+INC 22 //Reiniciar a cero
+INC 21 // Empezar el programa
+INC 1 //Incrementar 1 para validar como par
+WRITE 119 //Escribir el numero a validar en el registro de memoria 119
+SHIFT 1
+SHIFT -1 //Lo que hace esto es dividir entre dos y multiplicar para dos con shift. si el numero es par, el resultado sera el mismo.
+MEMADD 120 //Valida como par si es cero
+ZJUMP 3 //Si es par debe saltar 3 para hacer ciertas instrucciones
+READ 119 //Prepara el proximo numero para validar
+JUMP  -9 //Si es impar salta 8 hacia atras para seguir con el proximo numero
+MEMADD 122 //Carga los resultados hasta ahora
+SHIFT -8 //Mueve los numeros a la izquierda
+MEMADD 119 //Escribe el numero par obtenido
+WRITE 122 //Escribe el resultado nuevo
+READ 120
+INC -1
+WRITE 120
+READ 119 //Prepara el proximo numero para validar
+INC -43 //Valida si ya se debe parar
+ZJUMP 3 //Si es cero se para
+READ 119 //Se vuelve a cargar el numero
+JUMP -11 //Si no, se sigue
+HALT

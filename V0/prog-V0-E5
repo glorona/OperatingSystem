@@ -1,0 +1,11 @@
+70 // Tamanio del programa en posiciones de memoria
+INC 1
+WRITE 128
+JUMP 4
+READ 128
+SHIFT -1
+WRITE 128
+MEMADD -1024 128
+ZJUMP 2
+JUMP -5
+HALT

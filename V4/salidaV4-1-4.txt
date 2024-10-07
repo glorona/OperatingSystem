@@ -1,0 +1,94 @@
+40 messages loaded from file messagesTCH.txt
+21 messages loaded from file messagesSTD.txt
+0 Asserts Loaded
+[0] STARTING simulation
+[0] User program list:
+    Program [prog-V4-E4-InvalidCall] with arrival time [0]
+	[0] Running Process Information:
+		[--- No running process ---]
+	[0] Ready-to-run process queues:
+                USER: 
+                DAEMONS: 
+	[0] SLEEPING Queue:
+		[--- empty queue ---]
+	[0] PID association with program's name:
+		[--- NO process association ---]
+	[0] Arrival Time Queue:
+		[SystemIdleProcess, 0, DAEMON-PROGRAM]
+		[prog-V4-E4-InvalidCall, 0, USER-PROGRAM]
+	[0]  Process [3] created into the [NEW] state, from program [SystemIdleProcess]
+	[0]  Process [3 - SystemIdleProcess] moving from the [NEW] state to the [READY] state
+	[0]  Process [0] created into the [NEW] state, from program [prog-V4-E4-InvalidCall]
+	[0]  Process [0 - prog-V4-E4-InvalidCall] moving from the [NEW] state to the [READY] state
+	[0] Running Process Information:
+		[--- No running process ---]
+	[0] Ready-to-run process queues:
+                USER: [0,10]
+                DAEMONS: [3,100]
+	[0] SLEEPING Queue:
+		[--- empty queue ---]
+	[0] PID association with program's name:
+		PID: 0 -> prog-V4-E4-InvalidCall
+		PID: 3 -> SystemIdleProcess
+	[0] Arrival Time Queue:
+		[--- empty queue ---]
+	[0]  Process [0 - prog-V4-E4-InvalidCall] moving from the [READY] state to the [EXECUTING] state
+	[0] Running Process Information:
+		[PID: 0, Priority: 10, WakeUp: 0, Queue: USER]
+	[0] Ready-to-run process queues:
+                USER: 
+                DAEMONS: [3,100]
+	[0] SLEEPING Queue:
+		[--- empty queue ---]
+	[0] PID association with program's name:
+		PID: 0 -> prog-V4-E4-InvalidCall
+		PID: 3 -> SystemIdleProcess
+	[0] Arrival Time Queue:
+		[--- empty queue ---]
+[1] {0D 000 000} IRET 0 0 (PID: 0, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[2] {08 005 000} WRITE 5 0 (PID: 0, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[3] {11 064 005} MEMADD 100 5 (PID: 0, PC: 2, Accumulator: 100, PSW: 0000 [----------------])
+[4] {04 0D2 000} TRAP 210 0 (PID: 0, PC: 3, Accumulator: 100, PSW: 0000 [----------------])
+[5] {0C 002 000} OS 2 0 (PID: 0, PC: 242, Accumulator: 100, PSW: 8080 [M-------X-------])
+	[6]  Process [0 - prog-V4-E4-InvalidCall] has made an invalid system call (210) and is being terminated
+	[6]  Process [0 - prog-V4-E4-InvalidCall] moving from the [EXECUTING] state to the [EXIT] state
+	[6]  Process [3 - SystemIdleProcess] moving from the [READY] state to the [EXECUTING] state
+	[6] Running Process Information:
+		[PID: 3, Priority: 100, WakeUp: 0, Queue: DAEMONS]
+	[6] Ready-to-run process queues:
+                USER: 
+                DAEMONS: 
+	[6] SLEEPING Queue:
+		[--- empty queue ---]
+	[6] PID association with program's name:
+		PID: 0 -> prog-V4-E4-InvalidCall Zombie process!
+		PID: 3 -> SystemIdleProcess
+	[6] Arrival Time Queue:
+		[--- empty queue ---]
+[7] {0D 000 000} IRET 0 0 (PID: 3, PC: 183, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[8] {0C 009 000} OS 9 0 (PID: 3, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[9] Clock interrupt number [1] has occured
+[10] {0D 000 000} IRET 0 0 (PID: 3, PC: 183, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[11] {0C 009 000} OS 9 0 (PID: 3, PC: 246, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[12] Clock interrupt number [2] has occured
+[13] {0D 000 000} IRET 0 0 (PID: 3, PC: 183, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[14] {04 003 000} TRAP 3 0 (PID: 3, PC: 184, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[15] {0C 002 000} OS 2 0 (PID: 3, PC: 242, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[16] Process [3 - SystemIdleProcess] has requested to terminate
+	[16]  Process [3 - SystemIdleProcess] moving from the [EXECUTING] state to the [EXIT] state
+[16] The system will shut down now...
+	[16] Running Process Information:
+		[--- No running process ---]
+	[16] Ready-to-run process queues:
+                USER: 
+                DAEMONS: 
+	[16] SLEEPING Queue:
+		[--- empty queue ---]
+	[16] PID association with program's name:
+		PID: 0 -> prog-V4-E4-InvalidCall Zombie process!
+		PID: 3 -> SystemIdleProcess Zombie process!
+	[16] Arrival Time Queue:
+		[--- empty queue ---]
+[17] {0D 000 000} IRET 0 0 (PID: -1, PC: 241, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+[18] {0B 000 000} HALT 0 0 (PID: -1, PC: 241, Accumulator: 0, PSW: 8083 [M-------X-----ZS])
+[18] END of the simulation

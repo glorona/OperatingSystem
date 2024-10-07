@@ -1,0 +1,1080 @@
+36 messages loaded from file messagesTCH.txt
+19 messages loaded from file messagesSTD.txt
+0 Asserts Loaded
+[0] STARTING simulation
+11 user programs loaded from file UserProgramsFile
+[0] User program list:
+    Program [prog-V3-E1] with arrival time [0]
+    Program [prog-V3-E2] with arrival time [12]
+    Program [prog-V3-E1] with arrival time [15]
+    Program [prog-V3-E2] with arrival time [35]
+    Program [prog-V3-E1] with arrival time [40]
+    Program [prog-V3-E2] with arrival time [45]
+    Program [prog-V3-E1] with arrival time [65]
+    Program [prog-V3-E2] with arrival time [70]
+    Program [prog-V3-E1] with arrival time [75]
+    Program [prog-V3-E2] with arrival time [100]
+    Program [prog-V3-Error] with arrival time [213]
+	[0] Running Process Information:
+		[--- No running process ---]
+	[0] Ready-to-run process queues:
+                USER: 
+                DAEMONS: 
+	[0] SLEEPING Queue:
+		[--- empty queue ---]
+	[0] PID association with program's name:
+		[--- NO process association ---]
+	[0] Arrival Time Queue:
+		[SystemIdleProcess, 0, DAEMON-PROGRAM]
+		[prog-V3-E1, 0, USER-PROGRAM]
+		[prog-V3-E2, 12, USER-PROGRAM]
+		[prog-V3-E1, 15, USER-PROGRAM]
+		[prog-V3-E2, 35, USER-PROGRAM]
+		[prog-V3-E1, 40, USER-PROGRAM]
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+	[0]  Process [11] created into the [NEW] state, from program [SystemIdleProcess]
+	[0]  Process [11 - SystemIdleProcess] moving from the [NEW] state to the [READY] state
+	[0]  Process [0] created into the [NEW] state, from program [prog-V3-E1]
+	[0]  Process [0 - prog-V3-E1] moving from the [NEW] state to the [READY] state
+	[0] Running Process Information:
+		[--- No running process ---]
+	[0] Ready-to-run process queues:
+                USER: [0,10]
+                DAEMONS: [11,100]
+	[0] SLEEPING Queue:
+		[--- empty queue ---]
+	[0] PID association with program's name:
+		PID: 0 -> prog-V3-E1
+		PID: 11 -> SystemIdleProcess
+	[0] Arrival Time Queue:
+		[prog-V3-E2, 12, USER-PROGRAM]
+		[prog-V3-E1, 15, USER-PROGRAM]
+		[prog-V3-E1, 40, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E2, 35, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+	[0]  Process [0 - prog-V3-E1] moving from the [READY] state to the [EXECUTING] state
+	[0] Running Process Information:
+		[PID: 0, Priority: 10, WakeUp: 0, Queue: USER]
+	[0] Ready-to-run process queues:
+                USER: 
+                DAEMONS: [11,100]
+	[0] SLEEPING Queue:
+		[--- empty queue ---]
+	[0] PID association with program's name:
+		PID: 0 -> prog-V3-E1
+		PID: 11 -> SystemIdleProcess
+	[0] Arrival Time Queue:
+		[prog-V3-E2, 12, USER-PROGRAM]
+		[prog-V3-E1, 15, USER-PROGRAM]
+		[prog-V3-E1, 40, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E2, 35, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+[1] {0D 000 000} IRET 0 0 (PID: 0, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[2] {08 018 000} WRITE 24 0 (PID: 0, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[3] {11 064 018} MEMADD 100 24 (PID: 0, PC: 2, Accumulator: 285622396, PSW: 0000 [----------------])
+[4] {08 018 000} WRITE 24 0 (PID: 0, PC: 3, Accumulator: 285622396, PSW: 0000 [----------------])
+[5] {04 003 000} TRAP 3 0 (PID: 0, PC: 4, Accumulator: 285622396, PSW: 0000 [----------------])
+[6] {0C 002 000} OS 2 0 (PID: 0, PC: 370, Accumulator: 285622396, PSW: 8080 [M-------X-------])
+	[7] Process [0 - prog-V3-E1] has requested to terminate
+	[7]  Process [0 - prog-V3-E1] moving from the [EXECUTING] state to the [EXIT] state
+	[7]  Process [11 - SystemIdleProcess] moving from the [READY] state to the [EXECUTING] state
+	[7] Running Process Information:
+		[PID: 11, Priority: 100, WakeUp: 0, Queue: DAEMONS]
+	[7] Ready-to-run process queues:
+                USER: 
+                DAEMONS: 
+	[7] SLEEPING Queue:
+		[--- empty queue ---]
+	[7] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 11 -> SystemIdleProcess
+	[7] Arrival Time Queue:
+		[prog-V3-E2, 12, USER-PROGRAM]
+		[prog-V3-E1, 15, USER-PROGRAM]
+		[prog-V3-E1, 40, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E2, 35, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+[8] {0D 000 000} IRET 0 0 (PID: 11, PC: 330, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[9] {0C 009 000} OS 9 0 (PID: 11, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[10] Clock interrupt number [1] has occured
+[11] {0D 000 000} IRET 0 0 (PID: 11, PC: 330, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[12] {0C 009 000} OS 9 0 (PID: 11, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[13] Clock interrupt number [2] has occured
+	[13]  Process [1] created into the [NEW] state, from program [prog-V3-E2]
+	[13]  Process [1 - prog-V3-E2] moving from the [NEW] state to the [READY] state
+	[13] Running Process Information:
+		[PID: 11, Priority: 100, WakeUp: 0, Queue: DAEMONS]
+	[13] Ready-to-run process queues:
+                USER: [1,5]
+                DAEMONS: 
+	[13] SLEEPING Queue:
+		[--- empty queue ---]
+	[13] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[13] Arrival Time Queue:
+		[prog-V3-E1, 15, USER-PROGRAM]
+		[prog-V3-E2, 35, USER-PROGRAM]
+		[prog-V3-E1, 40, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+	[13] Running Process Information:
+		[PID: 11, Priority: 100, WakeUp: 0, Queue: DAEMONS]
+	[13] Ready-to-run process queues:
+                USER: [1,5]
+                DAEMONS: 
+	[13] SLEEPING Queue:
+		[--- empty queue ---]
+	[13] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[13] Arrival Time Queue:
+		[prog-V3-E1, 15, USER-PROGRAM]
+		[prog-V3-E2, 35, USER-PROGRAM]
+		[prog-V3-E1, 40, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+	[13]  Process [11 - SystemIdleProcess] will be thrown out of the processor by process [1 - prog-V3-E2]
+	[13]  Process [11 - SystemIdleProcess] moving from the [EXECUTING] state to the [READY] state
+	[13]  Process [1 - prog-V3-E2] moving from the [READY] state to the [EXECUTING] state
+	[13] Running Process Information:
+		[PID: 1, Priority: 5, WakeUp: 0, Queue: USER]
+	[13] Ready-to-run process queues:
+                USER: 
+                DAEMONS: [11,100]
+	[13] SLEEPING Queue:
+		[--- empty queue ---]
+	[13] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[13] Arrival Time Queue:
+		[prog-V3-E1, 15, USER-PROGRAM]
+		[prog-V3-E2, 35, USER-PROGRAM]
+		[prog-V3-E1, 40, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+[14] {0D 000 000} IRET 0 0 (PID: 1, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[15] {05 000 000} NOP 0 0 (PID: 1, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[16] {0C 009 000} OS 9 0 (PID: 1, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[17] Clock interrupt number [3] has occured
+	[17]  Process [2] created into the [NEW] state, from program [prog-V3-E1]
+	[17]  Process [2 - prog-V3-E1] moving from the [NEW] state to the [READY] state
+	[17] Running Process Information:
+		[PID: 1, Priority: 5, WakeUp: 0, Queue: USER]
+	[17] Ready-to-run process queues:
+                USER: [2,10]
+                DAEMONS: [11,100]
+	[17] SLEEPING Queue:
+		[--- empty queue ---]
+	[17] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2
+		PID: 2 -> prog-V3-E1
+		PID: 11 -> SystemIdleProcess
+	[17] Arrival Time Queue:
+		[prog-V3-E2, 35, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E1, 40, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+	[17] Running Process Information:
+		[PID: 1, Priority: 5, WakeUp: 0, Queue: USER]
+	[17] Ready-to-run process queues:
+                USER: [2,10]
+                DAEMONS: [11,100]
+	[17] SLEEPING Queue:
+		[--- empty queue ---]
+	[17] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2
+		PID: 2 -> prog-V3-E1
+		PID: 11 -> SystemIdleProcess
+	[17] Arrival Time Queue:
+		[prog-V3-E2, 35, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E1, 40, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+[18] {0D 000 000} IRET 0 0 (PID: 1, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[19] {01 005 032} ADD 5 50 (PID: 1, PC: 2, Accumulator: 55, PSW: 0000 [----------------])
+[20] {0A 001 000} INC 1 0 (PID: 1, PC: 3, Accumulator: 56, PSW: 0000 [----------------])
+[21] {0C 009 000} OS 9 0 (PID: 1, PC: 374, Accumulator: 56, PSW: 8080 [M-------X-------])
+	[22] Clock interrupt number [4] has occured
+[23] {0D 000 000} IRET 0 0 (PID: 1, PC: 3, Accumulator: 56, PSW: 0000 [----------------])
+[24] {04 003 000} TRAP 3 0 (PID: 1, PC: 4, Accumulator: 56, PSW: 0000 [----------------])
+[25] {0C 002 000} OS 2 0 (PID: 1, PC: 370, Accumulator: 56, PSW: 8080 [M-------X-------])
+	[26] Process [1 - prog-V3-E2] has requested to terminate
+	[26]  Process [1 - prog-V3-E2] moving from the [EXECUTING] state to the [EXIT] state
+	[26]  Process [2 - prog-V3-E1] moving from the [READY] state to the [EXECUTING] state
+	[26] Running Process Information:
+		[PID: 2, Priority: 10, WakeUp: 0, Queue: USER]
+	[26] Ready-to-run process queues:
+                USER: 
+                DAEMONS: [11,100]
+	[26] SLEEPING Queue:
+		[--- empty queue ---]
+	[26] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 11 -> SystemIdleProcess
+	[26] Arrival Time Queue:
+		[prog-V3-E2, 35, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E1, 40, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+[27] {0D 000 000} IRET 0 0 (PID: 2, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[28] {0C 009 000} OS 9 0 (PID: 2, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[29] Clock interrupt number [5] has occured
+[30] {0D 000 000} IRET 0 0 (PID: 2, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[31] {0C 009 000} OS 9 0 (PID: 2, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[32] Clock interrupt number [6] has occured
+[33] {0D 000 000} IRET 0 0 (PID: 2, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[34] {08 018 000} WRITE 24 0 (PID: 2, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[35] {11 064 018} MEMADD 100 24 (PID: 2, PC: 2, Accumulator: 285622396, PSW: 0000 [----------------])
+[36] {0C 009 000} OS 9 0 (PID: 2, PC: 374, Accumulator: 285622396, PSW: 8080 [M-------X-------])
+	[37] Clock interrupt number [7] has occured
+	[37]  Process [3] created into the [NEW] state, from program [prog-V3-E2]
+	[37]  Process [3 - prog-V3-E2] moving from the [NEW] state to the [READY] state
+	[37] Running Process Information:
+		[PID: 2, Priority: 10, WakeUp: 0, Queue: USER]
+	[37] Ready-to-run process queues:
+                USER: [3,5]
+                DAEMONS: [11,100]
+	[37] SLEEPING Queue:
+		[--- empty queue ---]
+	[37] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[37] Arrival Time Queue:
+		[prog-V3-E1, 40, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+	[37] Running Process Information:
+		[PID: 2, Priority: 10, WakeUp: 0, Queue: USER]
+	[37] Ready-to-run process queues:
+                USER: [3,5]
+                DAEMONS: [11,100]
+	[37] SLEEPING Queue:
+		[--- empty queue ---]
+	[37] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[37] Arrival Time Queue:
+		[prog-V3-E1, 40, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+	[37]  Process [2 - prog-V3-E1] will be thrown out of the processor by process [3 - prog-V3-E2]
+	[37]  Process [2 - prog-V3-E1] moving from the [EXECUTING] state to the [READY] state
+	[37]  Process [3 - prog-V3-E2] moving from the [READY] state to the [EXECUTING] state
+	[37] Running Process Information:
+		[PID: 3, Priority: 5, WakeUp: 0, Queue: USER]
+	[37] Ready-to-run process queues:
+                USER: [2,10]
+                DAEMONS: [11,100]
+	[37] SLEEPING Queue:
+		[--- empty queue ---]
+	[37] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[37] Arrival Time Queue:
+		[prog-V3-E1, 40, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+[38] {0D 000 000} IRET 0 0 (PID: 3, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[39] {05 000 000} NOP 0 0 (PID: 3, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[40] {01 005 032} ADD 5 50 (PID: 3, PC: 2, Accumulator: 55, PSW: 0000 [----------------])
+[41] {0C 009 000} OS 9 0 (PID: 3, PC: 374, Accumulator: 55, PSW: 8080 [M-------X-------])
+	[42] Clock interrupt number [8] has occured
+	[42]  Process [4] created into the [NEW] state, from program [prog-V3-E1]
+	[42]  Process [4 - prog-V3-E1] moving from the [NEW] state to the [READY] state
+	[42] Running Process Information:
+		[PID: 3, Priority: 5, WakeUp: 0, Queue: USER]
+	[42] Ready-to-run process queues:
+                USER: [2,10], [4,10]
+                DAEMONS: [11,100]
+	[42] SLEEPING Queue:
+		[--- empty queue ---]
+	[42] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2
+		PID: 4 -> prog-V3-E1
+		PID: 11 -> SystemIdleProcess
+	[42] Arrival Time Queue:
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+	[42] Running Process Information:
+		[PID: 3, Priority: 5, WakeUp: 0, Queue: USER]
+	[42] Ready-to-run process queues:
+                USER: [2,10], [4,10]
+                DAEMONS: [11,100]
+	[42] SLEEPING Queue:
+		[--- empty queue ---]
+	[42] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2
+		PID: 4 -> prog-V3-E1
+		PID: 11 -> SystemIdleProcess
+	[42] Arrival Time Queue:
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+[43] {0D 000 000} IRET 0 0 (PID: 3, PC: 2, Accumulator: 55, PSW: 0000 [----------------])
+[44] {0A 001 000} INC 1 0 (PID: 3, PC: 3, Accumulator: 56, PSW: 0000 [----------------])
+[45] {04 003 000} TRAP 3 0 (PID: 3, PC: 4, Accumulator: 56, PSW: 0000 [----------------])
+[46] {0C 002 000} OS 2 0 (PID: 3, PC: 370, Accumulator: 56, PSW: 8080 [M-------X-------])
+	[47] Process [3 - prog-V3-E2] has requested to terminate
+	[47]  Process [3 - prog-V3-E2] moving from the [EXECUTING] state to the [EXIT] state
+	[47]  Process [2 - prog-V3-E1] moving from the [READY] state to the [EXECUTING] state
+	[47] Running Process Information:
+		[PID: 2, Priority: 10, WakeUp: 0, Queue: USER]
+	[47] Ready-to-run process queues:
+                USER: [4,10]
+                DAEMONS: [11,100]
+	[47] SLEEPING Queue:
+		[--- empty queue ---]
+	[47] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 11 -> SystemIdleProcess
+	[47] Arrival Time Queue:
+		[prog-V3-E2, 45, USER-PROGRAM]
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+[48] {0D 000 000} IRET 0 0 (PID: 2, PC: 2, Accumulator: 285622396, PSW: 0000 [----------------])
+[49] {0C 009 000} OS 9 0 (PID: 2, PC: 374, Accumulator: 285622396, PSW: 8080 [M-------X-------])
+	[50] Clock interrupt number [9] has occured
+	[50]  Process [5] created into the [NEW] state, from program [prog-V3-E2]
+	[50]  Process [5 - prog-V3-E2] moving from the [NEW] state to the [READY] state
+	[50] Running Process Information:
+		[PID: 2, Priority: 10, WakeUp: 0, Queue: USER]
+	[50] Ready-to-run process queues:
+                USER: [5,5], [4,10]
+                DAEMONS: [11,100]
+	[50] SLEEPING Queue:
+		[--- empty queue ---]
+	[50] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[50] Arrival Time Queue:
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+	[50] Running Process Information:
+		[PID: 2, Priority: 10, WakeUp: 0, Queue: USER]
+	[50] Ready-to-run process queues:
+                USER: [5,5], [4,10]
+                DAEMONS: [11,100]
+	[50] SLEEPING Queue:
+		[--- empty queue ---]
+	[50] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[50] Arrival Time Queue:
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+	[50]  Process [2 - prog-V3-E1] will be thrown out of the processor by process [5 - prog-V3-E2]
+	[50]  Process [2 - prog-V3-E1] moving from the [EXECUTING] state to the [READY] state
+	[50]  Process [5 - prog-V3-E2] moving from the [READY] state to the [EXECUTING] state
+	[50] Running Process Information:
+		[PID: 5, Priority: 5, WakeUp: 0, Queue: USER]
+	[50] Ready-to-run process queues:
+                USER: [4,10], [2,10]
+                DAEMONS: [11,100]
+	[50] SLEEPING Queue:
+		[--- empty queue ---]
+	[50] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[50] Arrival Time Queue:
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+[51] {0D 000 000} IRET 0 0 (PID: 5, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[52] {0C 009 000} OS 9 0 (PID: 5, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[53] Clock interrupt number [10] has occured
+[54] {0D 000 000} IRET 0 0 (PID: 5, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[55] {05 000 000} NOP 0 0 (PID: 5, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[56] {0C 009 000} OS 9 0 (PID: 5, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[57] Clock interrupt number [11] has occured
+[58] {0D 000 000} IRET 0 0 (PID: 5, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[59] {01 005 032} ADD 5 50 (PID: 5, PC: 2, Accumulator: 55, PSW: 0000 [----------------])
+[60] {0A 001 000} INC 1 0 (PID: 5, PC: 3, Accumulator: 56, PSW: 0000 [----------------])
+[61] {0C 009 000} OS 9 0 (PID: 5, PC: 374, Accumulator: 56, PSW: 8080 [M-------X-------])
+	[62] Clock interrupt number [12] has occured
+[63] {0D 000 000} IRET 0 0 (PID: 5, PC: 3, Accumulator: 56, PSW: 0000 [----------------])
+[64] {04 003 000} TRAP 3 0 (PID: 5, PC: 4, Accumulator: 56, PSW: 0000 [----------------])
+[65] {0C 002 000} OS 2 0 (PID: 5, PC: 370, Accumulator: 56, PSW: 8080 [M-------X-------])
+	[66] Process [5 - prog-V3-E2] has requested to terminate
+	[66]  Process [5 - prog-V3-E2] moving from the [EXECUTING] state to the [EXIT] state
+	[66]  Process [4 - prog-V3-E1] moving from the [READY] state to the [EXECUTING] state
+	[66] Running Process Information:
+		[PID: 4, Priority: 10, WakeUp: 0, Queue: USER]
+	[66] Ready-to-run process queues:
+                USER: [2,10]
+                DAEMONS: [11,100]
+	[66] SLEEPING Queue:
+		[--- empty queue ---]
+	[66] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 11 -> SystemIdleProcess
+	[66] Arrival Time Queue:
+		[prog-V3-E1, 65, USER-PROGRAM]
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+[67] {0D 000 000} IRET 0 0 (PID: 4, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[68] {0C 009 000} OS 9 0 (PID: 4, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[69] Clock interrupt number [13] has occured
+	[69]  Process [6] created into the [NEW] state, from program [prog-V3-E1]
+	[69]  Process [6 - prog-V3-E1] moving from the [NEW] state to the [READY] state
+	[69] Running Process Information:
+		[PID: 4, Priority: 10, WakeUp: 0, Queue: USER]
+	[69] Ready-to-run process queues:
+                USER: [2,10], [6,10]
+                DAEMONS: [11,100]
+	[69] SLEEPING Queue:
+		[--- empty queue ---]
+	[69] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 11 -> SystemIdleProcess
+	[69] Arrival Time Queue:
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+	[69] Running Process Information:
+		[PID: 4, Priority: 10, WakeUp: 0, Queue: USER]
+	[69] Ready-to-run process queues:
+                USER: [2,10], [6,10]
+                DAEMONS: [11,100]
+	[69] SLEEPING Queue:
+		[--- empty queue ---]
+	[69] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 11 -> SystemIdleProcess
+	[69] Arrival Time Queue:
+		[prog-V3-E2, 70, USER-PROGRAM]
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+[70] {0D 000 000} IRET 0 0 (PID: 4, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[71] {0C 009 000} OS 9 0 (PID: 4, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[72] Clock interrupt number [14] has occured
+	[72]  Process [7] created into the [NEW] state, from program [prog-V3-E2]
+	[72]  Process [7 - prog-V3-E2] moving from the [NEW] state to the [READY] state
+	[72] Running Process Information:
+		[PID: 4, Priority: 10, WakeUp: 0, Queue: USER]
+	[72] Ready-to-run process queues:
+                USER: [7,5], [6,10], [2,10]
+                DAEMONS: [11,100]
+	[72] SLEEPING Queue:
+		[--- empty queue ---]
+	[72] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 7 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[72] Arrival Time Queue:
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+	[72] Running Process Information:
+		[PID: 4, Priority: 10, WakeUp: 0, Queue: USER]
+	[72] Ready-to-run process queues:
+                USER: [7,5], [6,10], [2,10]
+                DAEMONS: [11,100]
+	[72] SLEEPING Queue:
+		[--- empty queue ---]
+	[72] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 7 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[72] Arrival Time Queue:
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+	[72]  Process [4 - prog-V3-E1] will be thrown out of the processor by process [7 - prog-V3-E2]
+	[72]  Process [4 - prog-V3-E1] moving from the [EXECUTING] state to the [READY] state
+	[72]  Process [7 - prog-V3-E2] moving from the [READY] state to the [EXECUTING] state
+	[72] Running Process Information:
+		[PID: 7, Priority: 5, WakeUp: 0, Queue: USER]
+	[72] Ready-to-run process queues:
+                USER: [2,10], [6,10], [4,10]
+                DAEMONS: [11,100]
+	[72] SLEEPING Queue:
+		[--- empty queue ---]
+	[72] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 7 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[72] Arrival Time Queue:
+		[prog-V3-E1, 75, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+		[prog-V3-E2, 100, USER-PROGRAM]
+[73] {0D 000 000} IRET 0 0 (PID: 7, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[74] {05 000 000} NOP 0 0 (PID: 7, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[75] {01 005 032} ADD 5 50 (PID: 7, PC: 2, Accumulator: 55, PSW: 0000 [----------------])
+[76] {0C 009 000} OS 9 0 (PID: 7, PC: 374, Accumulator: 55, PSW: 8080 [M-------X-------])
+	[77] Clock interrupt number [15] has occured
+	[77]  Process [8] created into the [NEW] state, from program [prog-V3-E1]
+	[77]  Process [8 - prog-V3-E1] moving from the [NEW] state to the [READY] state
+	[77] Running Process Information:
+		[PID: 7, Priority: 5, WakeUp: 0, Queue: USER]
+	[77] Ready-to-run process queues:
+                USER: [2,10], [6,10], [4,10], [8,10]
+                DAEMONS: [11,100]
+	[77] SLEEPING Queue:
+		[--- empty queue ---]
+	[77] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 7 -> prog-V3-E2
+		PID: 8 -> prog-V3-E1
+		PID: 11 -> SystemIdleProcess
+	[77] Arrival Time Queue:
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+	[77] Running Process Information:
+		[PID: 7, Priority: 5, WakeUp: 0, Queue: USER]
+	[77] Ready-to-run process queues:
+                USER: [2,10], [6,10], [4,10], [8,10]
+                DAEMONS: [11,100]
+	[77] SLEEPING Queue:
+		[--- empty queue ---]
+	[77] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 7 -> prog-V3-E2
+		PID: 8 -> prog-V3-E1
+		PID: 11 -> SystemIdleProcess
+	[77] Arrival Time Queue:
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+[78] {0D 000 000} IRET 0 0 (PID: 7, PC: 2, Accumulator: 55, PSW: 0000 [----------------])
+[79] {0A 001 000} INC 1 0 (PID: 7, PC: 3, Accumulator: 56, PSW: 0000 [----------------])
+[80] {04 003 000} TRAP 3 0 (PID: 7, PC: 4, Accumulator: 56, PSW: 0000 [----------------])
+[81] {0C 002 000} OS 2 0 (PID: 7, PC: 370, Accumulator: 56, PSW: 8080 [M-------X-------])
+	[82] Process [7 - prog-V3-E2] has requested to terminate
+	[82]  Process [7 - prog-V3-E2] moving from the [EXECUTING] state to the [EXIT] state
+	[82]  Process [2 - prog-V3-E1] moving from the [READY] state to the [EXECUTING] state
+	[82] Running Process Information:
+		[PID: 2, Priority: 10, WakeUp: 0, Queue: USER]
+	[82] Ready-to-run process queues:
+                USER: [6,10], [8,10], [4,10]
+                DAEMONS: [11,100]
+	[82] SLEEPING Queue:
+		[--- empty queue ---]
+	[82] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 7 -> prog-V3-E2 Zombie process!
+		PID: 8 -> prog-V3-E1
+		PID: 11 -> SystemIdleProcess
+	[82] Arrival Time Queue:
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+[83] {0D 000 000} IRET 0 0 (PID: 2, PC: 2, Accumulator: 285622396, PSW: 0000 [----------------])
+[84] {0C 009 000} OS 9 0 (PID: 2, PC: 374, Accumulator: 285622396, PSW: 8080 [M-------X-------])
+	[85] Clock interrupt number [16] has occured
+[86] {0D 000 000} IRET 0 0 (PID: 2, PC: 2, Accumulator: 285622396, PSW: 0000 [----------------])
+[87] {0C 009 000} OS 9 0 (PID: 2, PC: 374, Accumulator: 285622396, PSW: 8080 [M-------X-------])
+	[88] Clock interrupt number [17] has occured
+[89] {0D 000 000} IRET 0 0 (PID: 2, PC: 2, Accumulator: 285622396, PSW: 0000 [----------------])
+[90] {08 018 000} WRITE 24 0 (PID: 2, PC: 3, Accumulator: 285622396, PSW: 0000 [----------------])
+[91] {0C 009 000} OS 9 0 (PID: 2, PC: 374, Accumulator: 285622396, PSW: 8080 [M-------X-------])
+	[92] Clock interrupt number [18] has occured
+[93] {0D 000 000} IRET 0 0 (PID: 2, PC: 3, Accumulator: 285622396, PSW: 0000 [----------------])
+[94] {04 003 000} TRAP 3 0 (PID: 2, PC: 4, Accumulator: 285622396, PSW: 0000 [----------------])
+[95] {0C 002 000} OS 2 0 (PID: 2, PC: 370, Accumulator: 285622396, PSW: 8080 [M-------X-------])
+	[96] Process [2 - prog-V3-E1] has requested to terminate
+	[96]  Process [2 - prog-V3-E1] moving from the [EXECUTING] state to the [EXIT] state
+	[96]  Process [6 - prog-V3-E1] moving from the [READY] state to the [EXECUTING] state
+	[96] Running Process Information:
+		[PID: 6, Priority: 10, WakeUp: 0, Queue: USER]
+	[96] Ready-to-run process queues:
+                USER: [4,10], [8,10]
+                DAEMONS: [11,100]
+	[96] SLEEPING Queue:
+		[--- empty queue ---]
+	[96] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1 Zombie process!
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 7 -> prog-V3-E2 Zombie process!
+		PID: 8 -> prog-V3-E1
+		PID: 11 -> SystemIdleProcess
+	[96] Arrival Time Queue:
+		[prog-V3-E2, 100, USER-PROGRAM]
+		[prog-V3-Error, 213, USER-PROGRAM]
+[97] {0D 000 000} IRET 0 0 (PID: 6, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[98] {0C 009 000} OS 9 0 (PID: 6, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[99] Clock interrupt number [19] has occured
+[100] {0D 000 000} IRET 0 0 (PID: 6, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[101] {0C 009 000} OS 9 0 (PID: 6, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[102] Clock interrupt number [20] has occured
+	[102]  Process [9] created into the [NEW] state, from program [prog-V3-E2]
+	[102]  Process [9 - prog-V3-E2] moving from the [NEW] state to the [READY] state
+	[102] Running Process Information:
+		[PID: 6, Priority: 10, WakeUp: 0, Queue: USER]
+	[102] Ready-to-run process queues:
+                USER: [9,5], [8,10], [4,10]
+                DAEMONS: [11,100]
+	[102] SLEEPING Queue:
+		[--- empty queue ---]
+	[102] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1 Zombie process!
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 7 -> prog-V3-E2 Zombie process!
+		PID: 8 -> prog-V3-E1
+		PID: 9 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[102] Arrival Time Queue:
+		[prog-V3-Error, 213, USER-PROGRAM]
+	[102] Running Process Information:
+		[PID: 6, Priority: 10, WakeUp: 0, Queue: USER]
+	[102] Ready-to-run process queues:
+                USER: [9,5], [8,10], [4,10]
+                DAEMONS: [11,100]
+	[102] SLEEPING Queue:
+		[--- empty queue ---]
+	[102] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1 Zombie process!
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 7 -> prog-V3-E2 Zombie process!
+		PID: 8 -> prog-V3-E1
+		PID: 9 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[102] Arrival Time Queue:
+		[prog-V3-Error, 213, USER-PROGRAM]
+	[102]  Process [6 - prog-V3-E1] will be thrown out of the processor by process [9 - prog-V3-E2]
+	[102]  Process [6 - prog-V3-E1] moving from the [EXECUTING] state to the [READY] state
+	[102]  Process [9 - prog-V3-E2] moving from the [READY] state to the [EXECUTING] state
+	[102] Running Process Information:
+		[PID: 9, Priority: 5, WakeUp: 0, Queue: USER]
+	[102] Ready-to-run process queues:
+                USER: [4,10], [8,10], [6,10]
+                DAEMONS: [11,100]
+	[102] SLEEPING Queue:
+		[--- empty queue ---]
+	[102] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1 Zombie process!
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 7 -> prog-V3-E2 Zombie process!
+		PID: 8 -> prog-V3-E1
+		PID: 9 -> prog-V3-E2
+		PID: 11 -> SystemIdleProcess
+	[102] Arrival Time Queue:
+		[prog-V3-Error, 213, USER-PROGRAM]
+[103] {0D 000 000} IRET 0 0 (PID: 9, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[104] {05 000 000} NOP 0 0 (PID: 9, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[105] {01 005 032} ADD 5 50 (PID: 9, PC: 2, Accumulator: 55, PSW: 0000 [----------------])
+[106] {0C 009 000} OS 9 0 (PID: 9, PC: 374, Accumulator: 55, PSW: 8080 [M-------X-------])
+	[107] Clock interrupt number [21] has occured
+[108] {0D 000 000} IRET 0 0 (PID: 9, PC: 2, Accumulator: 55, PSW: 0000 [----------------])
+[109] {0A 001 000} INC 1 0 (PID: 9, PC: 3, Accumulator: 56, PSW: 0000 [----------------])
+[110] {04 003 000} TRAP 3 0 (PID: 9, PC: 4, Accumulator: 56, PSW: 0000 [----------------])
+[111] {0C 002 000} OS 2 0 (PID: 9, PC: 370, Accumulator: 56, PSW: 8080 [M-------X-------])
+	[112] Process [9 - prog-V3-E2] has requested to terminate
+	[112]  Process [9 - prog-V3-E2] moving from the [EXECUTING] state to the [EXIT] state
+	[112]  Process [4 - prog-V3-E1] moving from the [READY] state to the [EXECUTING] state
+	[112] Running Process Information:
+		[PID: 4, Priority: 10, WakeUp: 0, Queue: USER]
+	[112] Ready-to-run process queues:
+                USER: [8,10], [6,10]
+                DAEMONS: [11,100]
+	[112] SLEEPING Queue:
+		[--- empty queue ---]
+	[112] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1 Zombie process!
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 7 -> prog-V3-E2 Zombie process!
+		PID: 8 -> prog-V3-E1
+		PID: 9 -> prog-V3-E2 Zombie process!
+		PID: 11 -> SystemIdleProcess
+	[112] Arrival Time Queue:
+		[prog-V3-Error, 213, USER-PROGRAM]
+[113] {0D 000 000} IRET 0 0 (PID: 4, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[114] {0C 009 000} OS 9 0 (PID: 4, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[115] Clock interrupt number [22] has occured
+[116] {0D 000 000} IRET 0 0 (PID: 4, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[117] {0C 009 000} OS 9 0 (PID: 4, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[118] Clock interrupt number [23] has occured
+[119] {0D 000 000} IRET 0 0 (PID: 4, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[120] {08 018 000} WRITE 24 0 (PID: 4, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[121] {0C 009 000} OS 9 0 (PID: 4, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[122] Clock interrupt number [24] has occured
+[123] {0D 000 000} IRET 0 0 (PID: 4, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[124] {11 064 018} MEMADD 100 24 (PID: 4, PC: 2, Accumulator: 285622396, PSW: 0000 [----------------])
+[125] {08 018 000} WRITE 24 0 (PID: 4, PC: 3, Accumulator: 285622396, PSW: 0000 [----------------])
+[126] {0C 009 000} OS 9 0 (PID: 4, PC: 374, Accumulator: 285622396, PSW: 8080 [M-------X-------])
+	[127] Clock interrupt number [25] has occured
+[128] {0D 000 000} IRET 0 0 (PID: 4, PC: 3, Accumulator: 285622396, PSW: 0000 [----------------])
+[129] {04 003 000} TRAP 3 0 (PID: 4, PC: 4, Accumulator: 285622396, PSW: 0000 [----------------])
+[130] {0C 002 000} OS 2 0 (PID: 4, PC: 370, Accumulator: 285622396, PSW: 8080 [M-------X-------])
+	[131] Process [4 - prog-V3-E1] has requested to terminate
+	[131]  Process [4 - prog-V3-E1] moving from the [EXECUTING] state to the [EXIT] state
+	[131]  Process [8 - prog-V3-E1] moving from the [READY] state to the [EXECUTING] state
+	[131] Running Process Information:
+		[PID: 8, Priority: 10, WakeUp: 0, Queue: USER]
+	[131] Ready-to-run process queues:
+                USER: [6,10]
+                DAEMONS: [11,100]
+	[131] SLEEPING Queue:
+		[--- empty queue ---]
+	[131] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1 Zombie process!
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1 Zombie process!
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 7 -> prog-V3-E2 Zombie process!
+		PID: 8 -> prog-V3-E1
+		PID: 9 -> prog-V3-E2 Zombie process!
+		PID: 11 -> SystemIdleProcess
+	[131] Arrival Time Queue:
+		[prog-V3-Error, 213, USER-PROGRAM]
+[132] {0D 000 000} IRET 0 0 (PID: 8, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[133] {0C 009 000} OS 9 0 (PID: 8, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[134] Clock interrupt number [26] has occured
+[135] {0D 000 000} IRET 0 0 (PID: 8, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[136] {0C 009 000} OS 9 0 (PID: 8, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[137] Clock interrupt number [27] has occured
+[138] {0D 000 000} IRET 0 0 (PID: 8, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[139] {08 018 000} WRITE 24 0 (PID: 8, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[140] {11 064 018} MEMADD 100 24 (PID: 8, PC: 2, Accumulator: 285622396, PSW: 0000 [----------------])
+[141] {0C 009 000} OS 9 0 (PID: 8, PC: 374, Accumulator: 285622396, PSW: 8080 [M-------X-------])
+	[142] Clock interrupt number [28] has occured
+[143] {0D 000 000} IRET 0 0 (PID: 8, PC: 2, Accumulator: 285622396, PSW: 0000 [----------------])
+[144] {08 018 000} WRITE 24 0 (PID: 8, PC: 3, Accumulator: 285622396, PSW: 0000 [----------------])
+[145] {04 003 000} TRAP 3 0 (PID: 8, PC: 4, Accumulator: 285622396, PSW: 0000 [----------------])
+[146] {0C 002 000} OS 2 0 (PID: 8, PC: 370, Accumulator: 285622396, PSW: 8080 [M-------X-------])
+	[147] Process [8 - prog-V3-E1] has requested to terminate
+	[147]  Process [8 - prog-V3-E1] moving from the [EXECUTING] state to the [EXIT] state
+	[147]  Process [6 - prog-V3-E1] moving from the [READY] state to the [EXECUTING] state
+	[147] Running Process Information:
+		[PID: 6, Priority: 10, WakeUp: 0, Queue: USER]
+	[147] Ready-to-run process queues:
+                USER: 
+                DAEMONS: [11,100]
+	[147] SLEEPING Queue:
+		[--- empty queue ---]
+	[147] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1 Zombie process!
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1 Zombie process!
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1
+		PID: 7 -> prog-V3-E2 Zombie process!
+		PID: 8 -> prog-V3-E1 Zombie process!
+		PID: 9 -> prog-V3-E2 Zombie process!
+		PID: 11 -> SystemIdleProcess
+	[147] Arrival Time Queue:
+		[prog-V3-Error, 213, USER-PROGRAM]
+[148] {0D 000 000} IRET 0 0 (PID: 6, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[149] {0C 009 000} OS 9 0 (PID: 6, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[150] Clock interrupt number [29] has occured
+[151] {0D 000 000} IRET 0 0 (PID: 6, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[152] {0C 009 000} OS 9 0 (PID: 6, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[153] Clock interrupt number [30] has occured
+[154] {0D 000 000} IRET 0 0 (PID: 6, PC: 0, Accumulator: 0, PSW: 0002 [--------------Z-])
+[155] {08 018 000} WRITE 24 0 (PID: 6, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[156] {0C 009 000} OS 9 0 (PID: 6, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[157] Clock interrupt number [31] has occured
+[158] {0D 000 000} IRET 0 0 (PID: 6, PC: 1, Accumulator: 0, PSW: 0002 [--------------Z-])
+[159] {11 064 018} MEMADD 100 24 (PID: 6, PC: 2, Accumulator: 285622396, PSW: 0000 [----------------])
+[160] {08 018 000} WRITE 24 0 (PID: 6, PC: 3, Accumulator: 285622396, PSW: 0000 [----------------])
+[161] {0C 009 000} OS 9 0 (PID: 6, PC: 374, Accumulator: 285622396, PSW: 8080 [M-------X-------])
+	[162] Clock interrupt number [32] has occured
+[163] {0D 000 000} IRET 0 0 (PID: 6, PC: 3, Accumulator: 285622396, PSW: 0000 [----------------])
+[164] {04 003 000} TRAP 3 0 (PID: 6, PC: 4, Accumulator: 285622396, PSW: 0000 [----------------])
+[165] {0C 002 000} OS 2 0 (PID: 6, PC: 370, Accumulator: 285622396, PSW: 8080 [M-------X-------])
+	[166] Process [6 - prog-V3-E1] has requested to terminate
+	[166]  Process [6 - prog-V3-E1] moving from the [EXECUTING] state to the [EXIT] state
+	[166]  Process [11 - SystemIdleProcess] moving from the [READY] state to the [EXECUTING] state
+	[166] Running Process Information:
+		[PID: 11, Priority: 100, WakeUp: 0, Queue: DAEMONS]
+	[166] Ready-to-run process queues:
+                USER: 
+                DAEMONS: 
+	[166] SLEEPING Queue:
+		[--- empty queue ---]
+	[166] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1 Zombie process!
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1 Zombie process!
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1 Zombie process!
+		PID: 7 -> prog-V3-E2 Zombie process!
+		PID: 8 -> prog-V3-E1 Zombie process!
+		PID: 9 -> prog-V3-E2 Zombie process!
+		PID: 11 -> SystemIdleProcess
+	[166] Arrival Time Queue:
+		[prog-V3-Error, 213, USER-PROGRAM]
+[167] {0D 000 000} IRET 0 0 (PID: 11, PC: 330, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[168] {0C 009 000} OS 9 0 (PID: 11, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[169] Clock interrupt number [33] has occured
+[170] {0D 000 000} IRET 0 0 (PID: 11, PC: 330, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[171] {0C 009 000} OS 9 0 (PID: 11, PC: 374, Accumulator: 0, PSW: 8082 [M-------X-----Z-])
+	[172] Clock interrupt number [34] has occured
+[173] {0D 000 000} IRET 0 0 (PID: 11, PC: 330, Accumulator: 0, PSW: 0082 [--------X-----Z-])
+[174] {01 5E1 333} ADD 1505 819 (PID: 11, PC: 331, Accumulator: 2324, PSW: 0080 [--------X-------])
+[175] {05 000 000} NOP 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[176] {0C 009 000} OS 9 0 (PID: 11, PC: 374, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[177] Clock interrupt number [35] has occured
+[178] {0D 000 000} IRET 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[179] {06 801 000} JUMP -1 0 (PID: 11, PC: 331, Accumulator: 2324, PSW: 0080 [--------X-------])
+[180] {05 000 000} NOP 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[181] {0C 009 000} OS 9 0 (PID: 11, PC: 374, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[182] Clock interrupt number [36] has occured
+[183] {0D 000 000} IRET 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[184] {06 801 000} JUMP -1 0 (PID: 11, PC: 331, Accumulator: 2324, PSW: 0080 [--------X-------])
+[185] {05 000 000} NOP 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[186] {0C 009 000} OS 9 0 (PID: 11, PC: 374, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[187] Clock interrupt number [37] has occured
+[188] {0D 000 000} IRET 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[189] {06 801 000} JUMP -1 0 (PID: 11, PC: 331, Accumulator: 2324, PSW: 0080 [--------X-------])
+[190] {05 000 000} NOP 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[191] {0C 009 000} OS 9 0 (PID: 11, PC: 374, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[192] Clock interrupt number [38] has occured
+[193] {0D 000 000} IRET 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[194] {06 801 000} JUMP -1 0 (PID: 11, PC: 331, Accumulator: 2324, PSW: 0080 [--------X-------])
+[195] {05 000 000} NOP 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[196] {0C 009 000} OS 9 0 (PID: 11, PC: 374, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[197] Clock interrupt number [39] has occured
+[198] {0D 000 000} IRET 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[199] {06 801 000} JUMP -1 0 (PID: 11, PC: 331, Accumulator: 2324, PSW: 0080 [--------X-------])
+[200] {05 000 000} NOP 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[201] {0C 009 000} OS 9 0 (PID: 11, PC: 374, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[202] Clock interrupt number [40] has occured
+[203] {0D 000 000} IRET 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[204] {06 801 000} JUMP -1 0 (PID: 11, PC: 331, Accumulator: 2324, PSW: 0080 [--------X-------])
+[205] {05 000 000} NOP 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[206] {0C 009 000} OS 9 0 (PID: 11, PC: 374, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[207] Clock interrupt number [41] has occured
+[208] {0D 000 000} IRET 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[209] {06 801 000} JUMP -1 0 (PID: 11, PC: 331, Accumulator: 2324, PSW: 0080 [--------X-------])
+[210] {05 000 000} NOP 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[211] {0C 009 000} OS 9 0 (PID: 11, PC: 374, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[212] Clock interrupt number [42] has occured
+[213] {0D 000 000} IRET 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[214] {06 801 000} JUMP -1 0 (PID: 11, PC: 331, Accumulator: 2324, PSW: 0080 [--------X-------])
+[215] {05 000 000} NOP 0 0 (PID: 11, PC: 332, Accumulator: 2324, PSW: 0080 [--------X-------])
+[216] {0C 009 000} OS 9 0 (PID: 11, PC: 374, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[217] Clock interrupt number [43] has occured
+	[217] ERROR: Program [prog-V3-Error] is not valid [--- invalid priority or size ---]
+[218] {0D 000 000} IRET 0 0 (PID: 11, PC: 333, Accumulator: 2324, PSW: 0080 [--------X-------])
+[219] {04 003 000} TRAP 3 0 (PID: 11, PC: 334, Accumulator: 2324, PSW: 0080 [--------X-------])
+[220] {0C 002 000} OS 2 0 (PID: 11, PC: 370, Accumulator: 2324, PSW: 8080 [M-------X-------])
+	[221] Process [11 - SystemIdleProcess] has requested to terminate
+	[221]  Process [11 - SystemIdleProcess] moving from the [EXECUTING] state to the [EXIT] state
+[221] The system will shut down now...
+	[221] Running Process Information:
+		[--- No running process ---]
+	[221] Ready-to-run process queues:
+                USER: 
+                DAEMONS: 
+	[221] SLEEPING Queue:
+		[--- empty queue ---]
+	[221] PID association with program's name:
+		PID: 0 -> prog-V3-E1 Zombie process!
+		PID: 1 -> prog-V3-E2 Zombie process!
+		PID: 2 -> prog-V3-E1 Zombie process!
+		PID: 3 -> prog-V3-E2 Zombie process!
+		PID: 4 -> prog-V3-E1 Zombie process!
+		PID: 5 -> prog-V3-E2 Zombie process!
+		PID: 6 -> prog-V3-E1 Zombie process!
+		PID: 7 -> prog-V3-E2 Zombie process!
+		PID: 8 -> prog-V3-E1 Zombie process!
+		PID: 9 -> prog-V3-E2 Zombie process!
+		PID: 11 -> SystemIdleProcess Zombie process!
+	[221] Arrival Time Queue:
+		[--- empty queue ---]
+[222] {0D 000 000} IRET 0 0 (PID: -1, PC: 369, Accumulator: 2324, PSW: 8080 [M-------X-------])
+[223] {0B 000 000} HALT 0 0 (PID: -1, PC: 369, Accumulator: 2324, PSW: 8081 [M-------X------S])
+[223] END of the simulation

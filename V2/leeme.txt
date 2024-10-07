@@ -1,0 +1,23 @@
+Loroña Altamirano, Gabriel
+
+Ejercicios completos: Todos
+
+Respuestas a las preguntas de los ejercicios:
+
+3. El programa no se ejecuta dos veces dado que tiene la instrucción HALT, que provoca que el sistema operativo se prepare para apagarse.
+
+13.
+
+a. Es necesario salvar el valor actual del PC y de la PSW ya que para restaurar el programa al estado anterior como si nada hubiera pasado, se necesita guardar los registros que usa el programa (Registros del procesador).
+
+b.Si es necesario guardar valores adicionales, por que el programa tiene acceso al acumulador, a los registros adicionales del procesador y los puede usar en cualquier momento. En el caso de no salvarlos y exista un valor en los registros, no se podría continuar con la ejecución del programa de manera exitosa. Por lo tanto, los valores a guardar son los registros A,B y C junto con el acumulador.
+
+c. Si sería necesario, ya que debemos restaurar los valores de los registros A, B, C y el acumulador. Para esto, existen las funciones en el procesador para establecer el valor de los registros anteriores.
+
+d. Estos cambios afectan a la PCB, sería necesario modificar la pcb para que almacene e inicialice la copia de los registros A,B,C y el acumulador. También afectaría al OperatingSystem_RestoreContext() y al OperatingSystem_PCBInitialization().
+
+
+15.
+
+b. El modo protegido se ejecuta cuando el procesador va a manejar una interrupcion. Esto se da al cambiar de programa, cuando se genera una llamada al sistema, cuando se genera una excepción.
+

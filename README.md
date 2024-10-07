@@ -1,6 +1,6 @@
 # OperatingSystem
 
-#EN
+# EN
 This project contains an evolving Operating system developed during my international exchange in Oviedo, Spain.
 
 The operating system evolves with each version:
@@ -12,7 +12,7 @@ V3: Mutliprogrammed Operating System with Clock Interruptions and a new Long Ter
 V4: Multiprogrammed Operating System with fixed partition memory management.
 
 
-#ES
+# ES
 Este proyecto contiene un Simulador de Sistema informático que evoluciona con cada versión. Lo realicé como parte de mi intercambio académico en Oviedo, España.
 
 El sistema operativo evoluciona con cada version:

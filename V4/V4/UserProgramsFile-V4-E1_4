@@ -1,0 +1,8 @@
+prog-V4-E1-c-InvalidAddr 0
+prog-V4-E1-c-IRET 0
+prog-V4-E1-c-HALT 0
+prog-V4-E1-c-OS 0
+prog-V4-E2-DivZero 0
+prog-V4-E2-InvalidProcMode 0
+prog-V4-E3-InvalidInst 0
+prog-V4-E4-InvalidCall 0
